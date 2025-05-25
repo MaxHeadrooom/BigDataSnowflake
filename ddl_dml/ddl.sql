@@ -1,5 +1,5 @@
 CREATE TABLE dim_date (
-    date_key   INTEGER     PRIMARY KEY,      -- YYYYMMDD
+    date_key   INTEGER     PRIMARY KEY,     
     full_date  DATE        NOT NULL,
     year       INTEGER     NOT NULL,
     quarter    INTEGER     NOT NULL,
