@@ -18,7 +18,6 @@ CREATE TABLE dim_postal_code (
     country_id INTEGER REFERENCES dim_country(country_id)
 );
 
--- Клиенты и их питомцы
 CREATE TABLE dim_customer (
     customer_id INTEGER PRIMARY KEY,
     first_name VARCHAR(50),
