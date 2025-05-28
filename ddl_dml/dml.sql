@@ -1,9 +1,3 @@
-CREATE TEMPORARY TABLE mock_data_subset AS
-SELECT *
-FROM mock_data
-ORDER BY id
-LIMIT 5000;
-
 INSERT INTO dim_date (full_date)
 SELECT DISTINCT to_date(sale_date, 'MM/DD/YYYY')
 FROM mock_data_subset
